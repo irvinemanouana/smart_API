@@ -4,6 +4,8 @@
 module.exports = function(app){
     return {
         create: require('./create')(app),
+        owner: require('./update')(app)
+        //update: require('./update')(app)
         //show: require('./return')(app)
     };
 };

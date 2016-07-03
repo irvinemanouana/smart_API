@@ -10,5 +10,9 @@ module.exports = function (app) {
         bodyparser,
         app.actions.bottle.create
     );
+    router.post('/update',
+        bodyparser,
+        app.actions.bottle.owner
+    );
     return router;
 }

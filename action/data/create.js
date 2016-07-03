@@ -13,9 +13,10 @@ module.exports = function (app) {
         data.save(function (err,instance) {
             if (err)
                 return res.status(500).send(err);
-
-            console.log('data inserted!');
-            res.send(instance);
+            else {
+                console.log('data inserted!');
+                res.send(instance);
+            }
         });
 
     }

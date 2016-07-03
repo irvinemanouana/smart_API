@@ -10,5 +10,10 @@ module.exports = function (app) {
         bodyparser,
         app.actions.data.create
     );
+
+    router.post('/all',
+        bodyparser,
+        app.actions.data.showAll
+    );
     return router;
 }

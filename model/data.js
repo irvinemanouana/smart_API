@@ -8,10 +8,10 @@ module.exports = function (app) {
             date:{type:Date,default:Date.now},
             temperature: {type:Number, require:true},
             liter: {type:Number, require:true},
-            bottle:{type:Number, ref:'Bottle',required:true}
+            bottle:{type:String, ref:'Bottle',required:true}
         }
     );
-    var data = app.mongoose.model('Bottle',dataSchema);
+    var data = app.mongoose.model('Data',dataSchema);
     return data;
 
 }

@@ -8,7 +8,7 @@ var bodyparser = require('body-parser').json();
 module.exports = function (app) {
     router.post('/create',
         bodyparser,
-        app.actions.bottle.create
+        app.actions.data.create
     );
     return router;
 }

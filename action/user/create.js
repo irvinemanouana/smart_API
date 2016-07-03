@@ -15,7 +15,8 @@ module.exports = function (app) {
             created_at:new Date(),
             update_at:new Date(),
             phone: req.body.phone,
-            birth_day:req.body.birth_day,
+            pathPicture : req.body.pathPicture,
+            birth_day :req.body.birth_day,
             height : req.body.height,
             weight : req.body.weight
         });

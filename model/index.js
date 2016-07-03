@@ -14,5 +14,6 @@ module.exports = function (app) {
     app.model = {};
     app.model.user = require('./user')(app);
     app.model.bottle = require('./bottle')(app);
+    app.model.data = require('./data')(app);
 
 };

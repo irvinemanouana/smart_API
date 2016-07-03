@@ -6,7 +6,7 @@
 module.exports = function (app) {
     var bottleSchema = app.mongoose.Schema(
         {
-            owner :{type:Number, ref:'User',required:true},
+            owner :{type:String, ref:'User',required:true},
             date:{type:Date, default:Date.now}
         }
     );

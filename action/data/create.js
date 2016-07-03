@@ -3,7 +3,7 @@
  */
 module.exports = function (app) {
     return function (req, res, next) {
-        var data = new app.model.bottle({
+        var data = new app.model.data({
             temperature: req.body.temperature,
             liter: req.body.liter,
             bottle: req.body.bottle,

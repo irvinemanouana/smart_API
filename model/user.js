@@ -27,7 +27,7 @@ module.exports = function (app) {
             required:true,
             unique: true
         },
-
+        pathPicture:String,
         created_at:Date,
         update_at:Date,
         birth_day: String,

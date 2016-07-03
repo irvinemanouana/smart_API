@@ -12,6 +12,12 @@ module.exports = function (app) {
       bodyparser,
       app.actions.user.show
   );
+  
+  router.post('/update/image',
+      bodyparser,
+      app.actions.user.update
+  );
+  
 
   return router;
 };

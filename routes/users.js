@@ -18,6 +18,11 @@ module.exports = function (app) {
       app.actions.user.update
   );
   
+  router.post('/delete',
+      bodyparser,
+      app.actions.user.remove
+  );
+  
 
   return router;
 };

@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cb9ca7d-2dcd-4611-97db-1a58a581802f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/action/bottle/update.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/action/bottle/index.js" afterPath="$PROJECT_DIR$/action/bottle/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/action/data/list.js" afterPath="$PROJECT_DIR$/action/data/list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/bottle.js" afterPath="$PROJECT_DIR$/routes/bottle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/bottle.js" afterPath="$PROJECT_DIR$/model/bottle.js" />
     </list>
     <ignored path="smart.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,11 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="update.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/action/bottle/update.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
               <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bottle.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/model/bottle.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -119,7 +126,6 @@
         <option value="$PROJECT_DIR$/action/bottle/list.js" />
         <option value="$PROJECT_DIR$/action/bottle/create.js" />
         <option value="$PROJECT_DIR$/action/index.js" />
-        <option value="$PROJECT_DIR$/model/bottle.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/model/data.js" />
         <option value="$PROJECT_DIR$/model/index.js" />
@@ -135,6 +141,7 @@
         <option value="$PROJECT_DIR$/action/bottle/index.js" />
         <option value="$PROJECT_DIR$/routes/bottle.js" />
         <option value="$PROJECT_DIR$/action/bottle/update.js" />
+        <option value="$PROJECT_DIR$/model/bottle.js" />
       </list>
     </option>
   </component>
@@ -373,12 +380,12 @@
       <workItem from="1467265310911" duration="127000" />
       <workItem from="1467367868349" duration="514000" />
       <workItem from="1467529673494" duration="693000" />
-      <workItem from="1467531561591" duration="5458000" />
+      <workItem from="1467531561591" duration="5555000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54049000" />
+    <option name="totallyTimeSpent" value="54146000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -887,13 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/bottle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1039,6 +1039,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/bottle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
           <folding />
         </state>
       </provider>

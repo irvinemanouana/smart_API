@@ -26,6 +26,12 @@ module.exports = function (app) {
 
             console.log('User created!');
             res.send(instance);
+            var server = require('http').Server(app);
+            var io = require('socket.io')(server);
+            io.on('connection',function (data) {
+                console.log("test");
+            })
+
         });
     }
 

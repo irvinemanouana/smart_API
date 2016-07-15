@@ -9,10 +9,25 @@ module.exports = function (app) {
             date: new Date()
         });
 
+        var gcm = require('node-gcm');
+
+        var message = new gcm.Message({
+            data: { key1: 'msg1' }
+        });
+
+        var sender = new gcm.Sender('AIzaSyDCXppM-L3r4qaQ17Yvi5fJ_oMLRwdk5vA');
+        var regTokens = ['189065235440'];
+
+        sender.send(message, { registrationTokens: regTokens }, function (err, response) {
+            if(err){
+                console.log("error")
+                console.error(err);
+            }
+            else    console.log(response);
+        });
         bottle.save(function (err,instance) {
             if (err)
                 return res.status(500).send(err);
-
             console.log('Bottle added!');
             res.send(instance);
         });

@@ -23,7 +23,8 @@ module.exports = function (app) {
                 console.log("error")
                 console.error(err);
             }
-            else    console.log(response);
+            else
+                console.log(response);
         });
         bottle.save(function (err,instance) {
             if (err)

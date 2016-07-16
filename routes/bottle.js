@@ -14,5 +14,10 @@ module.exports = function (app) {
         bodyparser,
         app.actions.bottle.owner
     );
+
+    router.post('/get',
+        bodyparser,
+        app.actions.bottle.get
+    );
     return router;
 }

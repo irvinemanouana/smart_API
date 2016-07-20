@@ -16,7 +16,7 @@ module.exports = function (app) {
         app.actions.data.showAll
     );
 
-    router.get('/:temperature/:liter/:bottle',
+    router.post('/:temperature/:liter/:bottle',
         app.actions.data.createParams
     )
     return router;

@@ -1,0 +1,26 @@
+module.exports  = function (app) {
+
+    return function (req, res) {
+        var bottle = app.model.bottle;
+        bottle.findOne({
+            'owner':req.body.owner
+        },function (err,instance) {
+            if(err)
+                return res.status(500).send(instance);
+            else{
+
+                if (instance!=null) {
+                    res.send(instance);
+                    console.log("bottle found");
+                }
+                else {
+                   res.send(JSON.stringify(
+                        {
+                            "error": "empty"
+                        }));
+                }
+            }
+        });
+
+    }
+}

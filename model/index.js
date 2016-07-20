@@ -3,7 +3,7 @@
  */
 var mongoose = require('mongoose');
 
-var uri = 'mongodb://admin:admin@ds023325.mlab.com:23325/heroku_h19ls73t';
+var uri = 'mongodb://localhost:27017/smart';
 module.exports = function (app) {
     app.mongoose = mongoose.connect(uri,function (err,db) {
         if (err)

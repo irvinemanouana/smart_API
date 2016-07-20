@@ -1,6 +1,6 @@
 
 var express = require('express');
-var port = 3000;
+var port = 8080;
 var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
@@ -11,7 +11,7 @@ var io = require('socket.io')(server);
 
 }());
 
-server.listen(port,function(err){
+server.listen(process.env.PORT ||port,function(err){
   if (err)
       console.log("unable to listening on port "+port+" "+err);
   else

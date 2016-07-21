@@ -16,8 +16,8 @@ module.exports = function (app) {
         app.actions.data.showAll
     );
 
-
     router.post('/:temperature/:liter/:bottle',
+        bodyparser,
         app.actions.data.createParams
     )
     return router;

@@ -7,5 +7,6 @@ module.exports = function(app){
         createParams: require('./createData')(app),
         showAll: require('./list') (app),
         remove: require('./remove')(app)
+
     };
 };

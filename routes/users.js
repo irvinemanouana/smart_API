@@ -22,6 +22,11 @@ module.exports = function (app) {
       bodyparser,
       app.actions.user.remove
   );
+
+  router.post('/delete/user',
+      bodyparser,
+      app.actions.user.delete
+  );
   
 
   return router;
